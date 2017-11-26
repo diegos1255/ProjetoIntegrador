@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<title>FACEAR</title>
+
+	<link rel="stylesheet" href="resources/css/bootstrap.css"></link>
+
+	<!-- inclusao css template -->
+	<link href="resources/css/shop-item.css" rel="stylesheet" />
+
+</h:head>
+<h:body>
+
+	<!-- Navigation -->
+	<ui:include src="/cabecalho.xhtml" />
+
+	
+	<div class="container">
+
+		<div class="row">
+
+			<ui:include src="/menu.xhtml" />
+
+			<!-- /.col-lg-3 -->
+
+			<div class="col-lg-9">
+
+				<h:form>
+
+					<!-- /.card -->
+
+					<div class="card card-outline-secondary my-4">
+						<div class="card-header">
+							Template
+						</div>
+						<div class="card-body">
+
+							<h:commandButton value="Botão" styleClass="btn btn-success" actionListener="#{documentoBean.teste}" />
+
+						</div>
+					</div>
+
+				</h:form>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</h:body>
+</html>
